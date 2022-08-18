@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inspirational Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+<script type="module">
+  import {getText, myDateFunction} from './thingsgallery.js';
+  import {Butterfly} from './Butterfly.js';
+  getText("assets/snail.txt")
+  myDateFunction("thisyear")
+</script>
+
+  
+<style>
+
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.img {
+    float: left;
+}
+
+.div{
+    padding: 0 30px;
+    color: black;
+}
+
+p{
+  color: black;
+}
+
+.column{
+  padding: 0 10px;
+}
+
+/* Create rows that take up 40% of the column space% */
+.row {
+  flex: 100%;
+  max-width: 100%;
+  padding: 15px 10px;
+  border: 5px solid #555
+}
+
+/* Below are the descendant selectors */
+
+footer p {
+  font-style: italic;
+  font-size: 8px;
+}
+
+p a{
+  font-style: italic;
+  font-size: 7px;
+  color: blue;
+}
+
+p text {
+  font-style: italic;
+  font-size: 14px;
+}
+
+p img {
+  filter: drop-shadow(8px 8px 10px gray);
+}
+
+p mark {
+  font-style: bold;
+}
+
+.row img {
+  padding: 0 10px;
+  max-width: 40%;
+  float: left;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.row text {
+  margin-top: auto;
+  font-size: 10px;
+}
+
+.details summary {
+  font-size: 9px;
+  color: black;
+}
+
+
+/*Pseudo element and pseudo class selectors*/
+
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+p::first-letter {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+::selection {
+  background-color: cyan;
+}
+
+#sepline::after{
+    content: "\a";
+    white-space: pre;
+}
+
+p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+/*Pseudo class selectors*/
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+
+/* Responsive layout  */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Below are the adjacent selectors */
+
+img + text{
+  color: black;
+  font-weight: bold;
+}
+
+ p+h{
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+ p+h6{
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+ h6+p{
+  color: blue;
+  font-style: italic;
+  font-size: 9px;
+}
+
+ p+text{
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+ h+p{
+  font-style: italic;
+  font-size: 11px;
+}
+
+ p+p{
+  font-style: italic;
+  font-size: 10px;
+}
+
+ p+footer{
+  background-color: #bfbdbf;
+  font-size: 9px;
+}
+
+ footer+p{
+  font-size: 20px;
+}
+
+p+a{
+  font-size: 12px;
+}
+
+p+details{
+  font-size: 10px;
+  color: black
+}
+  </style>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="ClassProject.html">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="petsgallery.html">PETS</a></li>
+        <li><a href="foodgallery.html">FOOD</a></li>
+        <li><a href="thingsgallery.html">THINGS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+
+<!-- Photo Grid -->
+<div class="column"> 
+
+  <div class="row">
+    <p> <img src="assets/snails.jpg" id="firstrow" style="width:100%">
+     <text id="sepline"> Two Snails </text>
+     This is a picture of two snails in <mark>Quincy, MA </mark>for some reason there were a lot of snails on the sidewalk so had 
+     to be careful not to step on them. Like how they blend into their background. My grandmother's last name translated
+     to snail. 
+     </p>
+     <h> Some useful links </h>
+     <p> <a href="https://en.wikipedia.org/wiki/Snail">Wikipedia Snail</a> </p>
+     <p> <a href="https://www.snail-world.com">Snail-World website</a> </p>
+    
+     <text> Snails in Literature</text>
+
+     <p id="snail">Fetch a file to change this text.</p>
+     <h6> Current Year </h6>
+     <p id="thisyear">This year</p>
+    <footer>
+	<p>Pic by Liz Shestakova. © 2022</p>
+    </footer>
+    <p>🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌🐌</p>
+
+  </div> 
+
+  <div class="row">
+    <p> <img src="assets/butterfly.jpg" id="secondrow" style="width:100%">
+    <text id="sepline"> Butterfly </text>
+    A butterfly from a butterfly garden in <mark>Quito, Ecuador.</mark> The place that had the best wildlife that I have seen because of the Galapagos 
+    islands. We travelled there and snorkeled with the seals and turtles. 
+     </p>
+    <h> Some useful links </h>
+     <p> <a href="https://en.wikipedia.org/wiki/Heliconius_charithonia">Wikipedia Zebra Longwing</a> </p>
+     <p> <a href="https://entnemdept.ufl.edu/creatures/bfly/zebra_longwing.htm">Entomology UF Zebra Longwing</a> </p>
+     <p id="butterfly" ></p>
+    <footer>
+	<p>Pic by Liz Shestakova. © 2022</p>
+    </footer>
+    <p>🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋</p>
+  </div> 
+
+
+  <div class="row">
+    <p> <img src="assets/tophub.jpg" id="thirdrow" style="width:100%">
+    <text id="sepline"> Top of the Hub Restaurant View</text>
+    A pic of the top of the hub in Boston, unfortunately it has closed down and something else will replace
+    it in 2023. I think it is very unfortunate as have many good memories there and it was a nice and iconic Boston
+    restaurant.
+     </p>
+     <p> <a href="https://boston.eater.com/2020/1/16/21068654/top-of-hub-restaurant-prudential-center-closing-2020">Top of the Hub, Boston’s Decades-Old Restaurant With a View, Is Closing</a></p>
+    <footer>
+	<p>Pic by Liz Shestakova. © 2022</p>
+    </footer>
+    <p> 🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰🗼🗽🏰</p>
+  </div> 
+
+  <div class="row">
+    <p> <img src="assets/diwali.jpg" id="fourthrow" style="width:100%">
+    <text id="sepline"> Diwali Celebration India</text>
+    Diwali decorations in India, a friend and I travelled to India for Diwali several years ago. The balconies are very 
+    decorated as well and people go out to shoot fireworks in the parking lots. 
+     </p>
+    <footer>
+	<p>Pic by Liz Shestakova. © 2022</p>
+    </footer>
+    <p>🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔🪔</p>
+    <details open>
+    <summary>Details</summary>
+    Diwali occurs on a moonless night and last 5 days. 
+    </details>
+  </div> 
+</div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com and modified by Liz Shestakova</a></p> 
+</footer>
+</body>
+</html>

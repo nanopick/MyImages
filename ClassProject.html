@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--This is my organizational/inspiration photo website, I started with the bootstrap Theme
+  called "Simply Me", which is a front page and then I modified it to suit the purpose of my website
+  and added pages of my own-->
+  <head>
+    <title>Inspirational Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="harlemshake.js"></script>
+    
+    <style>
+      body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+      }
+
+      .bg-1 {
+        background-color: #1abc9c; /* Green */
+        color: #ffffff;
+      }
+      .bg-2 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+      }
+      .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+      }
+      .bg-4 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+      }
+
+      .bg-5 {
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+      }
+
+      .cover {
+        width: 260px;
+        object-fit: cover;
+      }
+      .container-fluid {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+      }
+
+      <!--Descendant selectors-- > li a {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      button + a {
+        font-weight: bold;
+      }
+
+      div p {
+        font-size: 20px;
+      }
+
+      footer p {
+        font-style: italic;
+        font-size: 8px;
+      }
+
+      p a {
+        font-style: italic;
+        font-size: 7px;
+        color: blue;
+      }
+
+      <!--Pseudo element selector-- > p {
+        font-size: 16px;
+      }
+      .margin {
+        margin-bottom: 45px;
+      }
+
+      <!--Pseudo class selector-- > .navbar-nav li a:hover {
+        color: #1abc9c !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="ClassProject.html">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="petsgallery.html">PETS</a></li>
+            <li><a href="foodgallery.html">FOOD</a></li>
+            <li><a href="thingsgallery.html">THINGS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+      <h3 class="margin">Pets, Food, Things</h3>
+      <img
+        src="assets/crochetfish.jpg"
+        id="profilepic"
+        class="img-responsive img-circle margin"
+        style="display: inline"
+        alt="Crochet"
+        width="200"
+        height="200"
+      />
+      <h3>What inspires me</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">Pets</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Kitty on Queen Anne chair</p>
+          <img
+            src="assets/kittyinchair.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>Bear, on my yoga mat</p>
+          <img
+            src="assets/Bearyoga.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>Princess and the pea</p>
+          <img
+            src="assets/Princesswithpillows.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <a href="petsgallery.html" class="btn btn-default btn-lg">
+          <span class="fas fa-heart"></span> More Pets
+        </a>
+      </div>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">Food</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Desserts at Spot in NY</p>
+          <img
+            src="assets/minidesserts.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>Chocolate drink my friend had in London</p>
+          <img
+            src="assets/hotchoc.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>My favorite dish, squash ravioli</p>
+          <img
+            src="assets/ravioli.jpg"
+            class="img-responsive margin"
+            alt="Image"
+          />
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <a href="foodgallery.html" class="btn btn-default btn-lg">
+          <span class="fas fa-heart"></span> More Food
+        </a>
+      </div>
+    </div>
+
+    <!-- Fourth Container (Grid) -->
+    <div class="container-fluid bg-4 text-center">
+      <h3 class="margin">Things</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Interesting poster at Brookline Booksmith</p>
+          <img
+            src="assets/things.jpg"
+            class="margin img-responsive"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>Octopus city poster from online</p>
+          <img
+            src="assets/octopusart.jpg"
+            class="margin img-responsive"
+            alt="Image"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>House in Quincy with nice Japanese garden</p>
+          <img
+            src="assets/quincygarden.jpg"
+            class="margin img-responsive"
+            alt="Image"
+          />
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <a href="thingsgallery.html" class="btn btn-default btn-lg">
+          <span class="fas fa-heart"></span> More Things
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-5 text-center">
+      <p>
+        Bootstrap Theme Made By
+        <a href="https://www.w3schools.com"
+          >www.w3schools.com and modified by Liz Shestakova</a
+        >
+      </p>
+      <button onclick="harlemShake()" class="btn btn-default btn-lg">
+        Harlem Shake
+      </button>
+    </footer>
+  </body>
+</html>

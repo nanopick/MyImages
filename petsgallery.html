@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inspirational Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="petsgallery.js"></script>
+  <script> petsGallery() </script>
+
+  <style>
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+p {
+  font-size: 16px;
+}
+.margin {
+  margin-bottom: 45px;
+}
+
+.cover {
+  width: 260px;
+  object-fit: cover;
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+  </style>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="ClassProject.html">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="petsgallery.html">PETS</a></li>
+        <li><a href="#">FOOD</a></li>
+        <li><a href="#">THINGS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="assets/catlaundry.jpg" id= "first" style="width:100%">
+    <img src="assets/BearandKitty.jpg" id="second" style="width:100%">
+    <img src="assets/catcookie.PNG" id= "third" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="assets/Bearusingpillow.jpg" id="fourth" style="width:100%">
+    <img src="assets/olgacat.jpg" id= "fifth" style="width:100%">
+    <img src="assets/catgallery.jpg" id="sixth" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="assets/Bearblanket.jpg" id="seventh" style="width:100%">
+    <img src="assets/Bearpillow.jpg" id="eight" style="width:100%">
+    <img src="assets/cattv.jpg" id="ninth" style="width:100%">
+  </div>
+
+</div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com and modified by Liz Shestakova</a></p> 
+</footer>
+
+</body>
+</html>

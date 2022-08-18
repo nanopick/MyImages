@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Inspirational Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="imagefetch.js"></script>
+
+<script type="module">
+    import { fnChangeBorder,fnChangeBorder2,fnChangeBorder3,myFunction,myFunction2,myFunction3,myFunction4,myFunction9} from './foodgallery.js'
+    window.fnChangeBorder = fnChangeBorder;
+    window.fnChangeBorder2 = fnChangeBorder2;
+    window.fnChangeBorder3 = fnChangeBorder3;
+    window.myFunction = myFunction;
+    window.myFunction2 = myFunction2;
+    window.myFunction3 = myFunction3;
+    window.myFunction4 = myFunction4;
+    window.myFunction9 = myFunction9;
+    
+</script>
+
+
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+footer p {
+  font-style: italic;
+  font-size: 8px;
+}
+
+p a{
+  font-style: italic;
+  font-size: 7px;
+  color: blue;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+  </style>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="ClassProject.html">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="petsgallery.html">PETS</a></li>
+        <li><a href="foodgallery.html">FOOD</a></li>
+        <li><a href="#">THINGS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="assets/avocadotoast.jpg" id= "first1" onclick="fnChangeBorder('first1')" style="width:100%">
+    <img src="assets/hightea.jpg" id="first2" onclick="fnChangeBorder2('first2')" style="width:100%">
+    <img src="assets/birthdaycake.jpg" id= "first3" onclick="fnChangeBorder3('first3')" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="assets/brule.jpg" id="second4" onclick="myFunction('second4')" style="width:100%">
+    <img src="assets/candles.jpg" id= "second5" onclick="myFunction2('second5')" style="width:100%">
+    <img src="assets/palmfruit.jpg" id="second6" onclick="myFunction3('second6')" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="assets/navruz.jpg" id="third7" onclick="imagefetch()" style="width:100%">
+    <img src="assets/grasshopper.jpg" id="third8" style="width:100%">
+    <img src="assets/squash.jpg" id="third9" onclick="myFunction9('third9')" style="width:100%">
+  </div>
+
+</div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com and modified by Liz Shestakova</a></p> 
+</footer>
+
+</body>
+</html>
